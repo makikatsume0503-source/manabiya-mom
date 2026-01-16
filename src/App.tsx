@@ -49,7 +49,7 @@ function App() {
 
         <div style={{ marginTop: '2rem', display: 'grid', gridTemplateColumns: '1fr', gap: '2rem' }}>
 
-          <CalendarView selectedDate={selectedDate} onChange={setSelectedDate} />
+          <CalendarView selectedDate={selectedDate} onChange={setSelectedDate} history={history} />
 
           <div>
             <h2 style={{
