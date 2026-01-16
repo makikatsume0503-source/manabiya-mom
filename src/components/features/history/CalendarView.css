@@ -1,0 +1,66 @@
+/* Custom styles to match Manabiya Mom theme */
+.react-calendar {
+    border: none;
+    font-family: var(--font-main);
+    width: 100%;
+    max-width: 400px;
+}
+
+.react-calendar__navigation button {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: var(--color-bg-accent);
+}
+
+.react-calendar__tile {
+    padding: 0.75rem 0.5rem;
+    font-family: var(--font-main);
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: var(--color-bg-accent);
+    color: var(--color-primary);
+    border-radius: var(--radius-sm);
+}
+
+.react-calendar__tile--now {
+    background: var(--color-secondary);
+    color: white;
+    border-radius: var(--radius-sm);
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: var(--color-primary);
+}
+
+.react-calendar__tile--active {
+    background: var(--color-primary) !important;
+    color: white !important;
+    border-radius: var(--radius-sm);
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    color: var(--color-text-sub);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Weekend colors standard in Japan */
+.react-calendar__month-view__weekdays__weekday:nth-child(6),
+.react-calendar__month-view__days__day--weekend:nth-child(7n) {
+    /* Saturday */
+    color: #4A90E2;
+}
+
+.react-calendar__month-view__weekdays__weekday:nth-child(7),
+.react-calendar__month-view__days__day--weekend:nth-child(7n+1) {
+    /* Sunday */
+    color: #E24A4A;
+}
