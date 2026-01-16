@@ -7,9 +7,9 @@ import useLocalStorage from './hooks/useLocalStorage';
 import type { Goal, CoachingPhase } from './types';
 import { initialCoachingPhase } from './types';
 
-// Helper to format date key YYYY-MM-DD
+// Helper to format date key YYYY-MM-DD using Local Time
 const formatDateKey = (date: Date): string => {
-  return date.toISOString().split('T')[0];
+  return date.toLocaleDateString('en-CA');
 };
 
 function App() {
